@@ -45,7 +45,7 @@ details summary{
 	height: 36px;
 	padding: 0 16px;
 	border: none;
-	border-radius: 18px;
+	border-radius: 8px;
 	color: white;
 	/* FontAwesome first draws the icons; it has no letters, so the text uses Arial */
 	font: 600 15px/1 FontAwesome, Arial, Helvetica, sans-serif;
