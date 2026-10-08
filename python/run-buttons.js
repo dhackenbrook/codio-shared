@@ -35,21 +35,3 @@ document.getElementById("clearBtn").addEventListener("click", clearCode);
 				codio.open("terminal","clear");
 			});
 		}
-
-// Keep Check It! sections open after Codio redraws them with new results.
-// Remembers which sections the student opened, then reopens them.
-const openSections = {};
-document.addEventListener("toggle", function(e){
-	const box = e.target.closest ? e.target.closest(".codio-assessment-test") : null;
-	if (box && e.target.tagName === "DETAILS"){
-		openSections[box.getAttribute("aria-labelledby")] = e.target.open;
-	}
-}, true);
-new MutationObserver(function(){
-	document.querySelectorAll(".codio-assessment-test").forEach(function(box){
-		const section = box.querySelector(".codio-assessment-instructions details");
-		if (section && !section.open && openSections[box.getAttribute("aria-labelledby")]){
-			section.open = true;
-		}
-	});
-}).observe(document.body, {childList: true, subtree: true});
