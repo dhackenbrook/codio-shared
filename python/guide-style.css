@@ -46,6 +46,11 @@ details summary{
 	margin: 12px 0 !important;
 	color: #333333 !important;
 }
+/* hide Codio's info icon */
+.codio-info::before{
+	display: none !important;
+	background-image: none !important;
+}
 .codio-info .p-tag strong{
 	color: #2A46A3;
 	font-size: 19px;
