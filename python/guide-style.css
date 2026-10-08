@@ -1,0 +1,84 @@
+body, html{
+	margin-top: 10px;
+	max-width: 700px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:18px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+p{
+	color: #333333;
+	line-height:1.8em !important;
+}
+
+/* Example input/output and code */
+pre{
+	background: #F5F6F7;
+	border: 1px solid #DDDFE2;
+	border-radius: 6px;
+	padding: 10px 12px;
+	overflow-x: auto;
+	font-size: 15px;
+	line-height: 1.4em;
+}
+
+/* Collapsible instructions inside each Check It! */
+details summary{
+	cursor: pointer;
+	padding: 4px 0;
+}
+
+/* Deliverables icons */
+.fa-fw{
+	color: rgb(67, 99, 206);
+	margin-right: 4px;
+}
+
+button{
+	min-width:90px;
+	height:34px;
+	border-radius: 8px;
+	border:none;
+	padding:6px 12px;
+	margin: 0 2px;
+	color:white;
+	font-size: 16px;
+	font-family: inherit;
+}
+.run{
+	background:rgb(70, 162, 99);
+}
+.stop{
+	background:rgb(196, 48, 58);
+}
+.clear{
+	background:rgb(67, 99, 206);
+}
+button:hover{
+	cursor:pointer;
+}
+
+.run:hover{
+	background:rgb(57, 132, 81);
+}
+.stop:hover{
+	background:rgb(160, 38, 46);
+}
+.clear:hover{
+	background:rgb(49, 85, 203);
+}
+
+#RunCode{
+	text-align: center;
+	position: -webkit-sticky;
+	position: sticky;
+	/* 40px keeps the bar below Codio's guide toolbar while scrolling */
+	top: 40px;
+	background: #E7E9EB;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 6px;
+	z-index:9999;
+}
