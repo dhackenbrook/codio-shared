@@ -28,3 +28,23 @@ jsDelivr caches files for up to 12 hours. To update right away, open these links
 - https://purge.jsdelivr.net/gh/dhackenbrook/codio-shared@main/python/run-buttons.js
 
 Changes reach every assignment (including students already working), so test on one assignment first.
+
+## Assignment tools
+
+Run these in an assignment's Codio terminal. Each one previews first and only changes files when you add the flag, after saving a backup in your Codio home folder.
+
+**Delete assessments no Guide page uses**
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/dhackenbrook/codio-shared/main/tools/cleanup-assessments.sh)
+bash <(curl -s https://raw.githubusercontent.com/dhackenbrook/codio-shared/main/tools/cleanup-assessments.sh) --delete
+```
+
+**Make code test instructions collapsed by default**
+
+```bash
+python3 <(curl -s https://raw.githubusercontent.com/dhackenbrook/codio-shared/main/tools/collapse-instructions.py)
+python3 <(curl -s https://raw.githubusercontent.com/dhackenbrook/codio-shared/main/tools/collapse-instructions.py) --apply
+```
+
+Run the cleanup first, so unused assessments aren't changed. Reload the Codio page afterwards.
