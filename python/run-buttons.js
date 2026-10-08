@@ -1,3 +1,4 @@
+console.log("test");
 let scriptEle = document.createElement("script");
 scriptEle.setAttribute("src", "https://codio.com/codio-client.js");
 scriptEle.setAttribute("type", "text/javascript");
